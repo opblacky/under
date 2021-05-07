@@ -155,7 +155,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(
                 CLAIRE_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                reply_markup=InlineKeyboardMarkup(buttons)
+                reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN)
     else:
         update.effective_message.reply_text("Heya :D, I am alive!")
