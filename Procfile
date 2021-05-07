@@ -1,1 +1,1 @@
-web: python3 -m clairebot
+web: python3 -m claire
