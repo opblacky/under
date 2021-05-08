@@ -120,17 +120,19 @@ def __user_settings__(user_id):
         sql.user_should_report(user_id))
 
 
-__mod_name__ = "Reporting"
+__mod_name__ = "Reports"
 
 __help__ = """
- - /report <reason>: reply to a message to report it to admins.
- - @admin: reply to a message to report it to admins.
-NOTE: neither of these will get triggered if used by admins
+We're all busy people who don't have time to monitor our groups 24/7. But how do you react if someone in your group is spamming?
 
-*Admin only:*
- - /reports <on/off>: change report setting, or view current status.
-   - If done in pm, toggles your status.
-   - If in chat, toggles that chat's status.
+Presenting reports; if someone in your group thinks someone needs reporting, they now have an easy way to call all admins.
+
+*User Commands:*
+ ‣ /report <reason>: reply to a message to report it to admins.
+ ‣ @admin: reply to a message to report it to admins.
+
+*Admin Commands:*
+ ‣ /reports `<on/off>`:  Enable/disable user reports.
 """
 
 REPORT_HANDLER = CommandHandler("report", report, filters=Filters.group)
