@@ -1,3 +1,5 @@
+import threading
+
 from sqlalchemy import Column, String, Boolean, UnicodeText, Integer, func, distinct
 
 from claire.modules.sql import BASE, SESSION
